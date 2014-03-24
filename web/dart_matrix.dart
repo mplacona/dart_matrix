@@ -17,7 +17,14 @@ var columns = cW/fontSize; //number of columns for the rain
 var splittedLetters = letters.split('');
 var drops = [];
 
+CanvasElement canvas;
+CanvasRenderingContext2D context;
+
 void main() {
+  // get access to the canvas
+  canvas = querySelector('#canvasMatrix');
+  context = canvas.getContext('2d');
+  
   //create an array of drops column
   for(var i = 0; i < columns; i++){
     drops.add(1);
@@ -28,19 +35,17 @@ void main() {
 }
 
 void drawCharacters() {
-  CanvasElement canvas = querySelector('#canvasMatrix');
-  CanvasRenderingContext2D context = canvas.getContext('2d');
+  // apply colours and styles to the canvas context
   context.fillStyle = "rgba(0,0,0,0.05)";
   context.fillRect(0, 0, cW, cH);
   context.fillStyle = "#0f0"; //green text
   context.font = fontSize.toString() + "px arial";
   
-  var rng = new Random();
+  var rng = new Random(); // apply some randomness
+  
   //loop over each of the drops
   for(var i = 0; i < drops.length; i++)
   {
-    //random character to print
-    var rng = new Random();
     var text = splittedLetters[rng.nextInt(splittedLetters.length)];
     context.fillText(text, i*fontSize, drops[i]*fontSize);
     
