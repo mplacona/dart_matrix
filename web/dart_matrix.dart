@@ -20,6 +20,17 @@ var drops = [];
 CanvasElement canvas;
 CanvasRenderingContext2D context;
 
+/// Display the animation's FPS in a div.
+Element notes = querySelector("#fps");
+num fpsAverage;
+num renderTime;
+
+void showFps(num fps) {
+  if (fpsAverage == null) fpsAverage = fps;
+  fpsAverage = fps * 0.05 + fpsAverage * 0.95;
+  notes.text = "${fpsAverage.round()} fps";
+}
+
 void main() {
   // get access to the canvas
   canvas = querySelector('#canvasMatrix');
@@ -35,6 +46,11 @@ void main() {
 }
 
 void drawCharacters() {
+  // fps
+  num time = new DateTime.now().millisecondsSinceEpoch;
+  if (renderTime != null) showFps(1000 / (time - renderTime));
+  renderTime = time;
+  
   // apply colours and styles to the canvas context
   context.fillStyle = "rgba(0,0,0,0.05)";
   context.fillRect(0, 0, cW, cH);
