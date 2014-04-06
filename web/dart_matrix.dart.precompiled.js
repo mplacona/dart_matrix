@@ -419,12 +419,6 @@ var $$ = {};
       }
       throw H.wrapException(P.UnsupportedError$('' + receiver));
     },
-    roundToDouble$0: function(receiver) {
-      if (receiver < 0)
-        return -Math.round(-receiver);
-      else
-        return Math.round(receiver);
-    },
     toString$0: function(receiver) {
       if (receiver === 0 && 1 / receiver < 0)
         return "-0.0";
@@ -706,13 +700,13 @@ var $$ = {};
     return x == null || typeof x === "string" || typeof x === "number" || typeof x === "boolean";
   },
   startRootIsolate_closure: {
-    "^": "Closure:6;entry_0",
+    "^": "Closure:5;entry_0",
     call$0: function() {
       this.entry_0.call$1([]);
     }
   },
   startRootIsolate_closure0: {
-    "^": "Closure:6;entry_1",
+    "^": "Closure:5;entry_1",
     call$0: function() {
       this.entry_1.call$2([], null);
     }
@@ -891,7 +885,7 @@ var $$ = {};
     "^": "Object;"
   },
   IsolateNatives__processWorkerMessage_closure: {
-    "^": "Closure:6;entryPoint_0,args_1,message_2,isSpawnUri_3,replyTo_4",
+    "^": "Closure:5;entryPoint_0,args_1,message_2,isSpawnUri_3,replyTo_4",
     call$0: function() {
       var t1, t2, t3, context, t4, t5;
       t1 = this.entryPoint_0;
@@ -975,7 +969,7 @@ var $$ = {};
     $isSendPort: true
   },
   _NativeJsSendPort_send_closure: {
-    "^": "Closure:6;box_0,this_1,shouldSerialize_2",
+    "^": "Closure:5;box_0,this_1,shouldSerialize_2",
     call$0: function() {
       var t1, t2;
       t1 = this.this_1._receivePort;
@@ -1202,7 +1196,7 @@ var $$ = {};
     }
   },
   _Copier_visitMap_closure: {
-    "^": "Closure:7;box_0,this_1",
+    "^": "Closure:6;box_0,this_1",
     call$2: function(key, val) {
       var t1 = this.this_1;
       J.$indexSet$a(this.box_0.copy_0, t1._dispatch$1(key), t1._dispatch$1(val));
@@ -1488,11 +1482,6 @@ var $$ = {};
         return H.Primitives_stringFromCodePoints(charCodes);
     }
     return H.Primitives__fromCharCodeApply(charCodes);
-  },
-  Primitives_lazyAsJsDate: function(receiver) {
-    if (receiver.date === void 0)
-      receiver.date = new Date(receiver.millisecondsSinceEpoch);
-    return receiver.date;
   },
   Primitives_getProperty: function(object, key) {
     if (object == null || typeof object === "boolean" || typeof object === "number" || typeof object === "string")
@@ -2299,7 +2288,7 @@ var $$ = {};
     }
   },
   unwrapException_saveStackTrace: {
-    "^": "Closure:8;ex_0",
+    "^": "Closure:7;ex_0",
     call$1: function(error) {
       var t1 = J.getInterceptor(error);
       if (typeof error === "object" && error !== null && !!t1.$isError)
@@ -2323,31 +2312,31 @@ var $$ = {};
     }
   },
   invokeClosure_closure: {
-    "^": "Closure:6;closure_0",
+    "^": "Closure:5;closure_0",
     call$0: function() {
       return this.closure_0.call$0();
     }
   },
   invokeClosure_closure0: {
-    "^": "Closure:6;closure_1,arg1_2",
+    "^": "Closure:5;closure_1,arg1_2",
     call$0: function() {
       return this.closure_1.call$1(this.arg1_2);
     }
   },
   invokeClosure_closure1: {
-    "^": "Closure:6;closure_3,arg1_4,arg2_5",
+    "^": "Closure:5;closure_3,arg1_4,arg2_5",
     call$0: function() {
       return this.closure_3.call$2(this.arg1_4, this.arg2_5);
     }
   },
   invokeClosure_closure2: {
-    "^": "Closure:6;closure_6,arg1_7,arg2_8,arg3_9",
+    "^": "Closure:5;closure_6,arg1_7,arg2_8,arg3_9",
     call$0: function() {
       return this.closure_6.call$3(this.arg1_7, this.arg2_8, this.arg3_9);
     }
   },
   invokeClosure_closure3: {
-    "^": "Closure:6;closure_10,arg1_11,arg2_12,arg3_13,arg4_14",
+    "^": "Closure:5;closure_10,arg1_11,arg2_12,arg3_13,arg4_14",
     call$0: function() {
       return this.closure_10.call$4(this.arg1_11, this.arg2_12, this.arg3_13, this.arg4_14);
     }
@@ -2527,19 +2516,19 @@ var $$ = {};
     $isDynamicRuntimeType: true
   },
   initHooks_closure: {
-    "^": "Closure:8;getTag_0",
+    "^": "Closure:7;getTag_0",
     call$1: function(o) {
       return this.getTag_0(o);
     }
   },
   initHooks_closure0: {
-    "^": "Closure:9;getUnknownTag_1",
+    "^": "Closure:8;getUnknownTag_1",
     call$2: function(o, tag) {
       return this.getUnknownTag_1(o, tag);
     }
   },
   initHooks_closure1: {
-    "^": "Closure:10;prototypeForTag_2",
+    "^": "Closure:9;prototypeForTag_2",
     call$1: function(tag) {
       return this.prototypeForTag_2(tag);
     }
@@ -2802,31 +2791,31 @@ var $$ = {};
     }
   },
   _BaseZone_bindCallback_closure: {
-    "^": "Closure:6;this_0,registered_1",
+    "^": "Closure:5;this_0,registered_1",
     call$0: function() {
       return this.this_0.runGuarded$1(this.registered_1);
     }
   },
   _BaseZone_bindCallback_closure0: {
-    "^": "Closure:6;this_2,registered_3",
+    "^": "Closure:5;this_2,registered_3",
     call$0: function() {
       return this.this_2.run$1(this.registered_3);
     }
   },
   _BaseZone_bindUnaryCallback_closure: {
-    "^": "Closure:8;this_0,registered_1",
+    "^": "Closure:7;this_0,registered_1",
     call$1: function(arg) {
       return this.this_0.runUnaryGuarded$2(this.registered_1, arg);
     }
   },
   _BaseZone_bindUnaryCallback_closure0: {
-    "^": "Closure:8;this_2,registered_3",
+    "^": "Closure:7;this_2,registered_3",
     call$1: function(arg) {
       return this.this_2.runUnary$2(this.registered_3, arg);
     }
   },
   _rootHandleUncaughtError_closure: {
-    "^": "Closure:6;error_0,stackTrace_1",
+    "^": "Closure:5;error_0,stackTrace_1",
     call$0: function() {
       var t1, t2;
       t1 = new P._rootHandleUncaughtError__closure(this.error_0, this.stackTrace_1);
@@ -2844,7 +2833,7 @@ var $$ = {};
     }
   },
   _rootHandleUncaughtError__closure: {
-    "^": "Closure:6;error_2,stackTrace_3",
+    "^": "Closure:5;error_2,stackTrace_3",
     call$0: function() {
       var t1, trace, t2;
       t1 = this.error_2;
@@ -3195,7 +3184,7 @@ var $$ = {};
       }}
   },
   _HashMap_values_closure: {
-    "^": "Closure:8;this_0",
+    "^": "Closure:7;this_0",
     call$1: function(each) {
       return this.this_0.$index(0, each);
     }
@@ -3431,7 +3420,7 @@ var $$ = {};
       }}
   },
   _LinkedHashMap_values_closure: {
-    "^": "Closure:8;this_0",
+    "^": "Closure:7;this_0",
     call$1: function(each) {
       return this.this_0.$index(0, each);
     }
@@ -3897,7 +3886,7 @@ var $$ = {};
     }
   },
   Maps_mapToString_closure: {
-    "^": "Closure:7;box_0,result_1",
+    "^": "Closure:6;box_0,result_1",
     call$2: function(k, v) {
       var t1 = this.box_0;
       if (!t1.first_0)
@@ -4095,83 +4084,12 @@ var $$ = {};
     H.printString(line);
   },
   NoSuchMethodError_toString_closure: {
-    "^": "Closure:11;box_0",
+    "^": "Closure:10;box_0",
     call$2: function(key, value) {
       var t1 = this.box_0;
       if (t1.i_1 > 0)
         t1.sb_0.write$1(", ");
       t1.sb_0.write$1(P._symbolToString(key));
-    }
-  },
-  DateTime: {
-    "^": "Object;millisecondsSinceEpoch,isUtc",
-    $eq: function(_, other) {
-      var t1;
-      if (other == null)
-        return false;
-      t1 = J.getInterceptor(other);
-      if (typeof other !== "object" || other === null || !t1.$isDateTime)
-        return false;
-      return this.millisecondsSinceEpoch === other.millisecondsSinceEpoch && this.isUtc === other.isUtc;
-    },
-    get$hashCode: function(_) {
-      return this.millisecondsSinceEpoch;
-    },
-    toString$0: function(_) {
-      var t1, t2, t3, y, m, d, h, min, sec, ms;
-      t1 = new P.DateTime_toString_twoDigits();
-      t2 = this.isUtc;
-      t3 = t2 ? H.Primitives_lazyAsJsDate(this).getUTCFullYear() + 0 : H.Primitives_lazyAsJsDate(this).getFullYear() + 0;
-      y = new P.DateTime_toString_fourDigits().call$1(t3);
-      m = t1.call$1(t2 ? H.Primitives_lazyAsJsDate(this).getUTCMonth() + 1 : H.Primitives_lazyAsJsDate(this).getMonth() + 1);
-      d = t1.call$1(t2 ? H.Primitives_lazyAsJsDate(this).getUTCDate() + 0 : H.Primitives_lazyAsJsDate(this).getDate() + 0);
-      h = t1.call$1(t2 ? H.Primitives_lazyAsJsDate(this).getUTCHours() + 0 : H.Primitives_lazyAsJsDate(this).getHours() + 0);
-      min = t1.call$1(t2 ? H.Primitives_lazyAsJsDate(this).getUTCMinutes() + 0 : H.Primitives_lazyAsJsDate(this).getMinutes() + 0);
-      sec = t1.call$1(t2 ? H.Primitives_lazyAsJsDate(this).getUTCSeconds() + 0 : H.Primitives_lazyAsJsDate(this).getSeconds() + 0);
-      t1 = t2 ? H.Primitives_lazyAsJsDate(this).getUTCMilliseconds() + 0 : H.Primitives_lazyAsJsDate(this).getMilliseconds() + 0;
-      ms = new P.DateTime_toString_threeDigits().call$1(t1);
-      if (t2)
-        return H.S(y) + "-" + H.S(m) + "-" + H.S(d) + " " + H.S(h) + ":" + H.S(min) + ":" + H.S(sec) + "." + H.S(ms) + "Z";
-      else
-        return H.S(y) + "-" + H.S(m) + "-" + H.S(d) + " " + H.S(h) + ":" + H.S(min) + ":" + H.S(sec) + "." + H.S(ms);
-    },
-    DateTime$_now$0: function() {
-      H.Primitives_lazyAsJsDate(this);
-    },
-    $isDateTime: true,
-    static: {"^": "DateTime_MONDAY,DateTime_TUESDAY,DateTime_WEDNESDAY,DateTime_THURSDAY,DateTime_FRIDAY,DateTime_SATURDAY,DateTime_SUNDAY,DateTime_DAYS_PER_WEEK,DateTime_JANUARY,DateTime_FEBRUARY,DateTime_MARCH,DateTime_APRIL,DateTime_MAY,DateTime_JUNE,DateTime_JULY,DateTime_AUGUST,DateTime_SEPTEMBER,DateTime_OCTOBER,DateTime_NOVEMBER,DateTime_DECEMBER,DateTime_MONTHS_PER_YEAR,DateTime__MAX_MILLISECONDS_SINCE_EPOCH"}
-  },
-  DateTime_toString_fourDigits: {
-    "^": "Closure:12;",
-    call$1: function(n) {
-      var absN, sign;
-      absN = Math.abs(n);
-      sign = n < 0 ? "-" : "";
-      if (absN >= 1000)
-        return "" + n;
-      if (absN >= 100)
-        return sign + "0" + H.S(absN);
-      if (absN >= 10)
-        return sign + "00" + H.S(absN);
-      return sign + "000" + H.S(absN);
-    }
-  },
-  DateTime_toString_threeDigits: {
-    "^": "Closure:12;",
-    call$1: function(n) {
-      if (n >= 100)
-        return "" + n;
-      if (n >= 10)
-        return "0" + n;
-      return "00" + n;
-    }
-  },
-  DateTime_toString_twoDigits: {
-    "^": "Closure:12;",
-    call$1: function(n) {
-      if (n >= 10)
-        return "" + n;
-      return "0" + n;
     }
   },
   Duration: {
@@ -4208,7 +4126,7 @@ var $$ = {};
       }}
   },
   Duration_toString_sixDigits: {
-    "^": "Closure:12;",
+    "^": "Closure:11;",
     call$1: function(n) {
       if (n >= 100000)
         return "" + n;
@@ -4224,7 +4142,7 @@ var $$ = {};
     }
   },
   Duration_toString_twoDigits: {
-    "^": "Closure:12;",
+    "^": "Closure:11;",
     call$1: function(n) {
       if (n >= 10)
         return "" + n;
@@ -4597,79 +4515,61 @@ var $$ = {};
 ["", "dart_matrix.dart", , U, {
   "^": "",
   main: [function() {
-    var t1, i;
-    t1 = document.querySelector("#canvasMatrix");
-    $.canvas = t1;
-    $.context = J.getContext$1$x(t1, "2d");
-    i = 0;
-    while (true) {
-      t1 = $.columns;
-      if (typeof t1 !== "number")
-        return H.iae(t1);
-      if (!(i < t1))
-        break;
-      $.get$drops().push(1);
-      ++i;
-    }
+    var canvas, matrixEffect, t1, t2;
+    canvas = document.querySelector("#canvasMatrix");
+    matrixEffect = U.MatrixEffect$(canvas, J.getContext$1$x(canvas, "2d"));
     t1 = window;
+    t2 = matrixEffect.get$drawCharacters();
     C.Window_methods._ensureRequestAnimationFrame$0(t1);
-    C.Window_methods._requestAnimationFrame$1(t1, W._wrapZone(U.drawCharacters$closure()));
+    C.Window_methods._requestAnimationFrame$1(t1, W._wrapZone(t2));
   }, "call$0", "main$closure", 0, 0, 0],
-  drawCharacters: [function(_) {
-    var t1, t2, t3, i, text;
-    t1 = Date.now();
-    new P.DateTime(t1, false).DateTime$_now$0();
-    t2 = $.renderTime;
-    if (t2 != null) {
-      if (typeof t2 !== "number")
-        return H.iae(t2);
-      t2 = 1000 / (t1 - t2);
-      t3 = $.fpsAverage;
-      if (t3 == null) {
-        $.fpsAverage = t2;
-        t3 = t2;
-      }
-      if (typeof t3 !== "number")
-        return t3.$mul();
-      t3 = t2 * 0.05 + t3 * 0.95;
-      $.fpsAverage = t3;
-      $.get$notes().textContent = "" + C.JSNumber_methods.toInt$0(C.JSNumber_methods.roundToDouble$0(t3)) + " fps";
-    }
-    $.renderTime = t1;
-    t1 = $.context;
-    J.set$fillStyle$x(t1, "rgba(0,0,0,0.05)");
-    t1.fillRect(0, 0, 900, 550);
-    t1.fillStyle = "#0f0";
-    t1.font = C.JSInt_methods.toString$0(11) + "px arial";
-    for (i = 0; i < $.get$drops().length; ++i) {
-      t1 = $.get$splittedLetters();
-      t2 = C.C__JSRandom.nextInt$1(t1.length);
-      if (t2 < 0 || t2 >= t1.length)
-        return H.ioore(t1, t2);
-      text = t1[t2];
-      t2 = $.context;
-      t1 = $.get$drops();
-      if (i >= t1.length)
-        return H.ioore(t1, i);
-      J.fillText$3$x(t2, text, i * 11, t1[i] * 11);
-      t1 = $.get$drops();
-      if (i >= t1.length)
-        return H.ioore(t1, i);
-      if (t1[i] * 11 > 550 && C.C__JSRandom.nextDouble$0() > 0.975) {
-        t1 = $.get$drops();
+  MatrixEffect: {
+    "^": "Object;canvas,context,drops,columns,splittedLetters",
+    drawCharacters$1: [function(_) {
+      var t1, t2, i, t3, text;
+      t1 = this.context;
+      J.set$fillStyle$x(t1, "rgba(0,0,0,0.05)");
+      t1.fillRect(0, 0, 900, 550);
+      t1.fillStyle = "#0f0";
+      t1.font = C.JSInt_methods.toString$0(11) + "px arial";
+      for (t1 = this.drops, t2 = this.splittedLetters, i = 0; i < t1.length; ++i) {
+        t3 = C.C__JSRandom.nextInt$1(t2.length);
+        if (t3 < 0 || t3 >= t2.length)
+          return H.ioore(t2, t3);
+        text = t2[t3];
+        t3 = this.context;
         if (i >= t1.length)
           return H.ioore(t1, i);
-        t1[i] = 0;
+        J.fillText$3$x(t3, text, i * 11, t1[i] * 11);
+        if (i >= t1.length)
+          return H.ioore(t1, i);
+        if (t1[i] * 11 > 550 && C.C__JSRandom.nextDouble$0() > 0.975) {
+          if (i >= t1.length)
+            return H.ioore(t1, i);
+          t1[i] = 0;
+        }
+        if (i >= t1.length)
+          return H.ioore(t1, i);
+        t1[i] = t1[i] + 1;
       }
-      t1 = $.get$drops();
-      if (i >= t1.length)
-        return H.ioore(t1, i);
-      t1[i] = t1[i] + 1;
-    }
-    t1 = window;
-    C.Window_methods._ensureRequestAnimationFrame$0(t1);
-    C.Window_methods._requestAnimationFrame$1(t1, W._wrapZone(U.drawCharacters$closure()));
-  }, "call$1", "drawCharacters$closure", 2, 0, 5]
+      t1 = window;
+      t2 = this.get$drawCharacters();
+      C.Window_methods._ensureRequestAnimationFrame$0(t1);
+      C.Window_methods._requestAnimationFrame$1(t1, W._wrapZone(t2));
+    }, "call$1", "get$drawCharacters", 2, 0, 12],
+    MatrixEffect$2: function(_canvas, _context) {
+      var t1, t2, i;
+      this.canvas = _canvas;
+      this.context = _context;
+      for (t1 = this.columns, t2 = this.drops, i = 0; i < t1; ++i)
+        t2.push(1);
+    },
+    static: {"^": "MatrixEffect_cW,MatrixEffect_cH,MatrixEffect_fontSize,MatrixEffect_letters", MatrixEffect$: function(_canvas, _context) {
+        var t1 = new U.MatrixEffect(null, null, [], 81.81818181818181, "01".split(""));
+        t1.MatrixEffect$2(_canvas, _context);
+        return t1;
+      }}
+  }
 },
 1],
 ]);
@@ -4983,11 +4883,6 @@ $._nextCallback = null;
 $._lastCallback = null;
 $.Zone__current = C.C__RootZone;
 $.Expando__keyCount = 0;
-$.columns = 81.81818181818181;
-$.canvas = null;
-$.context = null;
-$.fpsAverage = null;
-$.renderTime = null;
 $.Device__isOpera = null;
 $.Device__isWebKit = null;
 Isolate.$lazy($, "globalThis", "globalThis", "get$globalThis", function() {
@@ -5073,15 +4968,6 @@ Isolate.$lazy($, "_toStringVisiting", "_toStringVisiting", "get$_toStringVisitin
 Isolate.$lazy($, "_toStringList", "Maps__toStringList", "get$Maps__toStringList", function() {
   return [];
 });
-Isolate.$lazy($, "splittedLetters", "splittedLetters", "get$splittedLetters", function() {
-  return "01".split("");
-});
-Isolate.$lazy($, "drops", "drops", "get$drops", function() {
-  return [];
-});
-Isolate.$lazy($, "notes", "notes", "get$notes", function() {
-  return document.querySelector("#fps");
-});
 // Native classes
 
 init.functionAliases = {};
@@ -5091,7 +4977,6 @@ init.metadata = [{func: "void_", void: true},
 {func: "int__dynamic", ret: J.JSInt, args: [null]},
 {func: "bool__Object_Object", ret: J.JSBool, args: [P.Object, P.Object]},
 {func: "int__Object", ret: J.JSInt, args: [P.Object]},
-{func: "void__num", void: true, args: [J.JSNumber]},
 {func: "args0"},
 {func: "args2", args: [null, null]},
 {func: "args1", args: [null]},
@@ -5099,6 +4984,7 @@ init.metadata = [{func: "void_", void: true},
 {func: "dynamic__String", args: [J.JSString]},
 {func: "dynamic__Symbol_dynamic", args: [P.Symbol, null]},
 {func: "String__int", ret: J.JSString, args: [J.JSInt]},
+{func: "void__num", void: true, args: [J.JSNumber]},
 ];
 $ = null;
 Isolate = Isolate.$finishIsolateConstructor(Isolate);
@@ -8206,44 +8092,6 @@ function dart_precompiled($collectedClasses) {
   if ($desc instanceof Array)
     $desc = $desc[1];
   NoSuchMethodError_toString_closure.prototype = $desc;
-  function DateTime(millisecondsSinceEpoch, isUtc) {
-    this.millisecondsSinceEpoch = millisecondsSinceEpoch;
-    this.isUtc = isUtc;
-  }
-  DateTime.builtin$cls = "DateTime";
-  if (!"name" in DateTime)
-    DateTime.name = "DateTime";
-  $desc = $collectedClasses.DateTime;
-  if ($desc instanceof Array)
-    $desc = $desc[1];
-  DateTime.prototype = $desc;
-  function DateTime_toString_fourDigits() {
-  }
-  DateTime_toString_fourDigits.builtin$cls = "DateTime_toString_fourDigits";
-  if (!"name" in DateTime_toString_fourDigits)
-    DateTime_toString_fourDigits.name = "DateTime_toString_fourDigits";
-  $desc = $collectedClasses.DateTime_toString_fourDigits;
-  if ($desc instanceof Array)
-    $desc = $desc[1];
-  DateTime_toString_fourDigits.prototype = $desc;
-  function DateTime_toString_threeDigits() {
-  }
-  DateTime_toString_threeDigits.builtin$cls = "DateTime_toString_threeDigits";
-  if (!"name" in DateTime_toString_threeDigits)
-    DateTime_toString_threeDigits.name = "DateTime_toString_threeDigits";
-  $desc = $collectedClasses.DateTime_toString_threeDigits;
-  if ($desc instanceof Array)
-    $desc = $desc[1];
-  DateTime_toString_threeDigits.prototype = $desc;
-  function DateTime_toString_twoDigits() {
-  }
-  DateTime_toString_twoDigits.builtin$cls = "DateTime_toString_twoDigits";
-  if (!"name" in DateTime_toString_twoDigits)
-    DateTime_toString_twoDigits.name = "DateTime_toString_twoDigits";
-  $desc = $collectedClasses.DateTime_toString_twoDigits;
-  if ($desc instanceof Array)
-    $desc = $desc[1];
-  DateTime_toString_twoDigits.prototype = $desc;
   function Duration(_duration) {
     this._duration = _duration;
   }
@@ -8456,5 +8304,19 @@ function dart_precompiled($collectedClasses) {
   if ($desc instanceof Array)
     $desc = $desc[1];
   _JSRandom.prototype = $desc;
-  return [HtmlElement, AnchorElement, AreaElement, AudioElement, AutocompleteErrorEvent, BRElement, BaseElement, BodyElement, ButtonElement, CanvasElement, CanvasGradient, CanvasPattern, CanvasRenderingContext, CanvasRenderingContext2D, ContentElement, DListElement, DataListElement, DetailsElement, DialogElement, DivElement, Document, DomError, DomException, Element, EmbedElement, ErrorEvent, Event, EventTarget, FieldSetElement, FileError, FormElement, HRElement, HeadElement, HeadingElement, HtmlDocument, HtmlHtmlElement, IFrameElement, ImageElement, InputElement, KeygenElement, LIElement, LabelElement, LegendElement, LinkElement, MapElement, MediaElement, MediaError, MediaKeyError, MenuElement, MetaElement, MeterElement, ModElement, Navigator, NavigatorUserMediaError, Node, OListElement, ObjectElement, OptGroupElement, OptionElement, OutputElement, ParagraphElement, ParamElement, PositionError, PreElement, ProgressElement, QuoteElement, ScriptElement, SelectElement, ShadowElement, SourceElement, SpanElement, SpeechRecognitionError, StyleElement, TableCaptionElement, TableCellElement, TableColElement, TableElement, TableRowElement, TableSectionElement, TemplateElement, TextAreaElement, TitleElement, TrackElement, UListElement, UnknownElement, VideoElement, Window, _HTMLAppletElement, _HTMLDirectoryElement, _HTMLFontElement, _HTMLFrameElement, _HTMLFrameSetElement, _HTMLMarqueeElement, AElement, AltGlyphElement, AnimateElement, AnimateMotionElement, AnimateTransformElement, AnimatedNumberList, AnimationElement, CircleElement, ClipPathElement, DefsElement, DescElement, EllipseElement, FEBlendElement, FEColorMatrixElement, FEComponentTransferElement, FECompositeElement, FEConvolveMatrixElement, FEDiffuseLightingElement, FEDisplacementMapElement, FEDistantLightElement, FEFloodElement, FEFuncAElement, FEFuncBElement, FEFuncGElement, FEFuncRElement, FEGaussianBlurElement, FEImageElement, FEMergeElement, FEMergeNodeElement, FEMorphologyElement, FEOffsetElement, FEPointLightElement, FESpecularLightingElement, FESpotLightElement, FETileElement, FETurbulenceElement, FilterElement, ForeignObjectElement, GElement, GeometryElement, GraphicsElement, ImageElement0, LineElement, LinearGradientElement, MarkerElement, MaskElement, MetadataElement, PathElement, PatternElement, PolygonElement, PolylineElement, RadialGradientElement, RectElement, ScriptElement0, SetElement, StopElement, StyleElement0, SvgElement, SvgSvgElement, SwitchElement, SymbolElement, TSpanElement, TextContentElement, TextElement, TextPathElement, TextPositioningElement, TitleElement0, UseElement, ViewElement, _GradientElement, _SVGAltGlyphDefElement, _SVGAltGlyphItemElement, _SVGAnimateColorElement, _SVGComponentTransferFunctionElement, _SVGCursorElement, _SVGFEDropShadowElement, _SVGFontElement, _SVGFontFaceElement, _SVGFontFaceFormatElement, _SVGFontFaceNameElement, _SVGFontFaceSrcElement, _SVGFontFaceUriElement, _SVGGlyphElement, _SVGGlyphRefElement, _SVGHKernElement, _SVGMPathElement, _SVGMissingGlyphElement, _SVGVKernElement, RenderingContext, SqlError, JS_CONST, Interceptor, JSBool, JSNull, JavaScriptObject, PlainJavaScriptObject, UnknownJavaScriptObject, JSArray, JSNumber, JSInt, JSDouble, JSString, startRootIsolate_closure, startRootIsolate_closure0, _Manager, _IsolateContext, _EventLoop, _EventLoop__runHelper_next, _IsolateEvent, _MainManagerStub, IsolateNatives__processWorkerMessage_closure, _BaseSendPort, _NativeJsSendPort, _NativeJsSendPort_send_closure, _WorkerSendPort, RawReceivePortImpl, _JsSerializer, _JsCopier, _JsDeserializer, _JsVisitedMap, _MessageTraverserVisitedMap, _MessageTraverser, _Copier, _Copier_visitMap_closure, _Serializer, _Deserializer, TimerImpl, TimerImpl_internalCallback, TimerImpl_internalCallback0, CapabilityImpl, ReflectionInfo, TypeErrorDecoder, NullError, JsNoSuchMethodError, UnknownJsTypeError, unwrapException_saveStackTrace, _StackTrace, invokeClosure_closure, invokeClosure_closure0, invokeClosure_closure1, invokeClosure_closure2, invokeClosure_closure3, Closure, TearOffClosure, BoundClosure, RuntimeError, RuntimeType, RuntimeFunctionType, DynamicRuntimeType, initHooks_closure, initHooks_closure0, initHooks_closure1, ListIterator, MappedIterable, EfficientLengthMappedIterable, MappedIterator, _AsyncCallbackEntry, _BaseZone, _BaseZone_bindCallback_closure, _BaseZone_bindCallback_closure0, _BaseZone_bindUnaryCallback_closure, _BaseZone_bindUnaryCallback_closure0, _rootHandleUncaughtError_closure, _rootHandleUncaughtError__closure, _RootZone, _HashMap, _HashMap_values_closure, HashMapKeyIterable, HashMapKeyIterator, _LinkedHashMap, _LinkedHashMap_values_closure, LinkedHashMapCell, LinkedHashMapKeyIterable, LinkedHashMapKeyIterator, _HashSet, _IdentityHashSet, HashSetIterator, _LinkedHashSet, LinkedHashSetCell, LinkedHashSetIterator, _HashSetBase, IterableBase, Maps_mapToString_closure, ListQueue, _ListQueueIterator, NoSuchMethodError_toString_closure, DateTime, DateTime_toString_fourDigits, DateTime_toString_threeDigits, DateTime_toString_twoDigits, Duration, Duration_toString_sixDigits, Duration_toString_twoDigits, Error, NullThrownError, ArgumentError, RangeError, UnsupportedError, UnimplementedError, StateError, ConcurrentModificationError, StackOverflowError, CyclicInitializationError, _ExceptionImplementation, Expando, Iterator, Null, Object, StringBuffer, Symbol, Capability, _JSRandom];
+  function MatrixEffect(canvas, context, drops, columns, splittedLetters) {
+    this.canvas = canvas;
+    this.context = context;
+    this.drops = drops;
+    this.columns = columns;
+    this.splittedLetters = splittedLetters;
+  }
+  MatrixEffect.builtin$cls = "MatrixEffect";
+  if (!"name" in MatrixEffect)
+    MatrixEffect.name = "MatrixEffect";
+  $desc = $collectedClasses.MatrixEffect;
+  if ($desc instanceof Array)
+    $desc = $desc[1];
+  MatrixEffect.prototype = $desc;
+  return [HtmlElement, AnchorElement, AreaElement, AudioElement, AutocompleteErrorEvent, BRElement, BaseElement, BodyElement, ButtonElement, CanvasElement, CanvasGradient, CanvasPattern, CanvasRenderingContext, CanvasRenderingContext2D, ContentElement, DListElement, DataListElement, DetailsElement, DialogElement, DivElement, Document, DomError, DomException, Element, EmbedElement, ErrorEvent, Event, EventTarget, FieldSetElement, FileError, FormElement, HRElement, HeadElement, HeadingElement, HtmlDocument, HtmlHtmlElement, IFrameElement, ImageElement, InputElement, KeygenElement, LIElement, LabelElement, LegendElement, LinkElement, MapElement, MediaElement, MediaError, MediaKeyError, MenuElement, MetaElement, MeterElement, ModElement, Navigator, NavigatorUserMediaError, Node, OListElement, ObjectElement, OptGroupElement, OptionElement, OutputElement, ParagraphElement, ParamElement, PositionError, PreElement, ProgressElement, QuoteElement, ScriptElement, SelectElement, ShadowElement, SourceElement, SpanElement, SpeechRecognitionError, StyleElement, TableCaptionElement, TableCellElement, TableColElement, TableElement, TableRowElement, TableSectionElement, TemplateElement, TextAreaElement, TitleElement, TrackElement, UListElement, UnknownElement, VideoElement, Window, _HTMLAppletElement, _HTMLDirectoryElement, _HTMLFontElement, _HTMLFrameElement, _HTMLFrameSetElement, _HTMLMarqueeElement, AElement, AltGlyphElement, AnimateElement, AnimateMotionElement, AnimateTransformElement, AnimatedNumberList, AnimationElement, CircleElement, ClipPathElement, DefsElement, DescElement, EllipseElement, FEBlendElement, FEColorMatrixElement, FEComponentTransferElement, FECompositeElement, FEConvolveMatrixElement, FEDiffuseLightingElement, FEDisplacementMapElement, FEDistantLightElement, FEFloodElement, FEFuncAElement, FEFuncBElement, FEFuncGElement, FEFuncRElement, FEGaussianBlurElement, FEImageElement, FEMergeElement, FEMergeNodeElement, FEMorphologyElement, FEOffsetElement, FEPointLightElement, FESpecularLightingElement, FESpotLightElement, FETileElement, FETurbulenceElement, FilterElement, ForeignObjectElement, GElement, GeometryElement, GraphicsElement, ImageElement0, LineElement, LinearGradientElement, MarkerElement, MaskElement, MetadataElement, PathElement, PatternElement, PolygonElement, PolylineElement, RadialGradientElement, RectElement, ScriptElement0, SetElement, StopElement, StyleElement0, SvgElement, SvgSvgElement, SwitchElement, SymbolElement, TSpanElement, TextContentElement, TextElement, TextPathElement, TextPositioningElement, TitleElement0, UseElement, ViewElement, _GradientElement, _SVGAltGlyphDefElement, _SVGAltGlyphItemElement, _SVGAnimateColorElement, _SVGComponentTransferFunctionElement, _SVGCursorElement, _SVGFEDropShadowElement, _SVGFontElement, _SVGFontFaceElement, _SVGFontFaceFormatElement, _SVGFontFaceNameElement, _SVGFontFaceSrcElement, _SVGFontFaceUriElement, _SVGGlyphElement, _SVGGlyphRefElement, _SVGHKernElement, _SVGMPathElement, _SVGMissingGlyphElement, _SVGVKernElement, RenderingContext, SqlError, JS_CONST, Interceptor, JSBool, JSNull, JavaScriptObject, PlainJavaScriptObject, UnknownJavaScriptObject, JSArray, JSNumber, JSInt, JSDouble, JSString, startRootIsolate_closure, startRootIsolate_closure0, _Manager, _IsolateContext, _EventLoop, _EventLoop__runHelper_next, _IsolateEvent, _MainManagerStub, IsolateNatives__processWorkerMessage_closure, _BaseSendPort, _NativeJsSendPort, _NativeJsSendPort_send_closure, _WorkerSendPort, RawReceivePortImpl, _JsSerializer, _JsCopier, _JsDeserializer, _JsVisitedMap, _MessageTraverserVisitedMap, _MessageTraverser, _Copier, _Copier_visitMap_closure, _Serializer, _Deserializer, TimerImpl, TimerImpl_internalCallback, TimerImpl_internalCallback0, CapabilityImpl, ReflectionInfo, TypeErrorDecoder, NullError, JsNoSuchMethodError, UnknownJsTypeError, unwrapException_saveStackTrace, _StackTrace, invokeClosure_closure, invokeClosure_closure0, invokeClosure_closure1, invokeClosure_closure2, invokeClosure_closure3, Closure, TearOffClosure, BoundClosure, RuntimeError, RuntimeType, RuntimeFunctionType, DynamicRuntimeType, initHooks_closure, initHooks_closure0, initHooks_closure1, ListIterator, MappedIterable, EfficientLengthMappedIterable, MappedIterator, _AsyncCallbackEntry, _BaseZone, _BaseZone_bindCallback_closure, _BaseZone_bindCallback_closure0, _BaseZone_bindUnaryCallback_closure, _BaseZone_bindUnaryCallback_closure0, _rootHandleUncaughtError_closure, _rootHandleUncaughtError__closure, _RootZone, _HashMap, _HashMap_values_closure, HashMapKeyIterable, HashMapKeyIterator, _LinkedHashMap, _LinkedHashMap_values_closure, LinkedHashMapCell, LinkedHashMapKeyIterable, LinkedHashMapKeyIterator, _HashSet, _IdentityHashSet, HashSetIterator, _LinkedHashSet, LinkedHashSetCell, LinkedHashSetIterator, _HashSetBase, IterableBase, Maps_mapToString_closure, ListQueue, _ListQueueIterator, NoSuchMethodError_toString_closure, Duration, Duration_toString_sixDigits, Duration_toString_twoDigits, Error, NullThrownError, ArgumentError, RangeError, UnsupportedError, UnimplementedError, StateError, ConcurrentModificationError, StackOverflowError, CyclicInitializationError, _ExceptionImplementation, Expando, Iterator, Null, Object, StringBuffer, Symbol, Capability, _JSRandom, MatrixEffect];
 }
